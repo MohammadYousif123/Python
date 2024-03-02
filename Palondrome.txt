@@ -1,0 +1,9 @@
+x = input("Enter the String to Check: ")
+
+L= len(x)
+y = x[- L: ]
+
+if y==x:
+  print("String is a Palondrome")
+else:
+  print("Not a Palondrome")  

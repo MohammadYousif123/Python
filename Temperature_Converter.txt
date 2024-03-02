@@ -1,0 +1,60 @@
+print("                     Temparature Converter") 
+
+print("\nWhat would you like to do?")
+print("1. Celcius To Farhenheit")
+print("2. Farenheit To Celcius")
+print("3. Kelvin To Celcius")
+print("4. Kelvin To Farenheit")
+
+
+
+
+choice = input("Enter your choice : ")
+
+
+
+Temp=0;
+
+def C_to_F(Temp):
+  Temp = float(input("Provide the temperature: "))
+  
+  c = Temp*9/5 + 32
+  print("Temperature in Farenheit is : ", c)
+
+def F_to_C(Temp):
+  Temp = float(input("Provide the temperature: "))
+  
+  c = float((Temp-32)*5/9)
+  print("Temperature in Celcius is : ", c)
+
+def K_to_C(Temp):
+  Temp = float(input("Provide the temperature: "))
+  
+  c = float(Temp-273.15)
+  print("Temperature in Celcius is : ", c)
+
+def K_to_F(Temp):
+  Temp = float(input("Provide the temperature: "))
+  
+  c = float((Temp-273.15)*9/5 +32)
+  print("Temperature in Farenheit is : ", c)
+
+
+
+
+if choice == "1":
+            
+   C_to_F(Temp)
+elif choice == "2":
+   F_to_C(Temp)
+
+elif choice == "3":
+   K_to_C(Temp)
+
+elif choice == "4":
+   K_to_F(Temp)
+
+
+else:
+   print("Invalid choice. Please enter a number between 1 and 4.")
+   

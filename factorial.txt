@@ -1,0 +1,6 @@
+fact=int(input("Enter the number: "));
+factorial=1
+for x in range(1,fact+1):
+   factorial = factorial* x
+   
+print("Here is your Factorial: ",factorial)   

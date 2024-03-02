@@ -1,0 +1,10 @@
+n =0
+Series = []
+for x in range(0,20):
+   if x <2:
+      p = n+x
+      Series.insert(x,p)
+   else:
+      p = p+Series[x-2]
+      Series.insert(x,p)
+print(Series)
